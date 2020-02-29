@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
     
-    var todoViews = new TodoViews({
+    var viewOne = new ViewOne({
     });
 
-$('body').append(todoViews.render().$el);
+$('body').append(viewOne.render().$el);
 
 });

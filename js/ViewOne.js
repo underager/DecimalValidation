@@ -1,4 +1,4 @@
-var TodoViews = Backbone.View.extend({
+var ViewOne = Backbone.View.extend({
     id:'todoItemsContainer',
     
     initialize: function(options){
