@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='../css/style.css'></link>
+</head>
+<body>
+    
+    <script type='text/javascript' src='../js/lib/jquery-3.4.1.min.js'></script>
+    <script type='text/javascript' src='../js/lib/underscore-min.js'></script>
+    <script type='text/javascript' src='../js/lib/backbone-min.js'></script>
+    <script type='text/javascript' src='../js/lib/mustache.js'></script>
+
+    <script type='text/javascript' src='../js/todoItem.js'></script>
+    <script type='text/javascript' src='../js/toDoItems.js'></script>
+    <script type='text/javascript' src='../js/todoView.js'></script>
+    <script type='text/javascript' src='../js/todoViews.js'></script>
+    <script type='text/javascript' src='../js/main.js'></script>
+
+    <script type='text/html' id='todoItemTemplate'>
+        <label>
+            <input type='checkbox' id='toggle'{{#completed}}checked {{/completed}} ></input>{{title}}
+        </label>
+        <button id= 'deleteButton'>Delete</button>
+    </script>
+
+    <script type='text/html' id='todoItemsTemplate'>
+    
+        <header id='addNewTodoItem'>
+            <input type='text' id='newItemAddtxt'autofocus placeholder='add new item'></input>
+            <!-- <button id="addButton">Add</button> -->
+        </header>
+        <ul id="todoList"></ul>
+
+        <label>KeyDown TextBox</label>
+            <input type="number" id='keyDownEvent'/><br>
+            <label>Result : <span id='keyDownResult'></span></label><br/>
+        
+            <label>KeyUp TextBox</label>
+            <input type='text' id='keyUpEvent'/><br/>
+            <label>Result : <span id='keyUpResult'></span></label><br/>
+
+            <label>KeyPress TextBox</label>
+            <input type='text' id='keyPressEvent' /><br/>
+            <label>Result : <span id='keyPressResult'></span></label><br/>
+
+    </script>
+</body>
+</html>

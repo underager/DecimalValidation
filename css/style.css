@@ -1,0 +1,52 @@
+body{
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+#todoList li.completed > label{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#todoList{
+    padding-left: 0px;
+    background: #fff;
+    margin-top: 0px;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+#todoList >li{
+    
+    border-bottom: 1px solid #ccc;
+    border-right : 1px solid #ccc;
+    padding: 10px;
+}
+
+#todoList > li > label{
+    width: 80%;
+    display: inline-block;
+}
+
+#todoList > li #deleteButton{
+    float: right;
+    font-size: 14px;
+    background: #d9534f;
+    border:0;
+    border-radius: 9px;
+    color: #fff;
+    padding: 7px
+}
+
+#newItemAddtxt {
+    padding: 10px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+#todoItemsContainer{
+    width:800px;
+    margin: 0 auto;
+}
+
